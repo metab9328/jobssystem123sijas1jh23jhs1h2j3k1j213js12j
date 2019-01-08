@@ -138,3 +138,7 @@ client.on('message',async message => {
     message.channel.send("** تم انشاء روم القبول والرفض بنجاح**")
             }
 })
+
+
+
+client.login(process.env.BOT_TOKEN);
