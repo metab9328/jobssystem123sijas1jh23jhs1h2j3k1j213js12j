@@ -1,3 +1,10 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const prefix = "!"; //NotMiro //BadGuY
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
 client.on("message", message => {
             if(message.content.startsWith("*تقديم")) {
         if(!message.channel.guild) return;
@@ -135,3 +142,7 @@ client.on('message',async message => {
     message.channel.send("** تم انشاء روم القبول والرفض بنجاح**")
             }
 })
+
+
+
+client.login(process.env.BOT_TOKEN);
