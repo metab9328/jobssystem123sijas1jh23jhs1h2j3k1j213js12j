@@ -13,13 +13,13 @@ client.on("message", message => {
             if(!channel) return message.reply("**لانشاء روم التقديمات !!setsubmissions من فضلك اكتب الامر**")
             if(channel) {
             message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-              m.edit( message.member + ', **اسمك الحقيقي كامل**' )
+              m.edit( message.member + ', **اسمك الحقيقي كامل **' )
               m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m1) => {
                   m1 = m1.first();
                   var name = m1.content;
                   m1.delete();
                   m.edit(message.member + ', **:timer:**').then( (m) =>{
-                      m.edit( message.member + ', **اسم حسابك بالسيرفر**' )
+                      m.edit( message.member + ', **اسم حسابك بالسيرفر **' )
                       setTimeout(() => {
                         m.delete()
                       }, 10000);
@@ -28,7 +28,7 @@ client.on("message", message => {
                           var age = m2.content;
                           m2.delete()
                           message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                            m.edit( message.member + ', **اسم شخصيتك الاساسية**' )
+                            m.edit( message.member + ', **اسم شخصيتك الاساسية **' )
                             setTimeout(() => {
                               m.delete()
                             }, 10000);
@@ -37,7 +37,7 @@ client.on("message", message => {
                                 var ask = m3.content;
                                 m3.delete();
                                 message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                  m.edit( message.member + ', **كم عمرك الحقيقي**' )
+                                  m.edit( message.member + ', **كم عمرك الحقيقي **' )
                                   setTimeout(() => {
                                     m.delete()
                                   }, 10000);
@@ -46,19 +46,19 @@ client.on("message", message => {
                                       var ask2 = m4.content;
                                       m4.delete();
                                       message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                        m.edit( message.member + ', **كم عدد ساعاتك بالسيرفر**' )
+                                        m.edit( message.member + ', **كم عدد ساعاتك بالسيرفر **' )
                                         m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m5) => {
                                             m5 = m5.first();
                                             var ask3 = m5.content;
                                             m5.delete();
 											message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                        m.edit( message.member + ', **كم عدد الاوامر  دون ذكر اي واحده منها**' )
+                                        m.edit( message.member + ', **كم عدد الاوامر  دون ذكر اي واحده منها **' )
                                         m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m6) => {
                                             m6 = m6.first();
                                             var ask4 = m6.content;
                                             m6.delete();
 											message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                        m.edit( message.member + ', **كم قاعدة رول بلاي تعرفها دون ذكر اي واحد منها**' )
+                                        m.edit( message.member + ', **كم قاعدة رول بلاي تعرفها دون ذكر اي واحد منها **' )
                                         m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m7) => {
                                             m7 = m7.first();
                                             var ask5 = m7.content;
